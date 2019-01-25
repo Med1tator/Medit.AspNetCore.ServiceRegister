@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medit.AspNetCore.ServiceRegister", "Medit.AspNetCore.ServiceRegister\Medit.AspNetCore.ServiceRegister.csproj", "{B459A8B1-41B8-4BB5-9D93-BAC888EE2D78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medit.AspNetCore.ServiceRegister", "src\Medit.AspNetCore.ServiceRegister\Medit.AspNetCore.ServiceRegister.csproj", "{01E2816D-00EB-4A25-9F7C-85883EDAB330}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BEFD72E9-3009-4DE7-84D4-8A3EA79EB318}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2BA34DDD-E660-4397-AC20-2E6CD525CF26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medit.AspNetCore.ServiceRegister.Sample", "test\Medit.AspNetCore.ServiceRegister.Sample\Medit.AspNetCore.ServiceRegister.Sample.csproj", "{29C80BDE-E704-4192-AD72-1FD173F36593}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medit.AspNetCore.ServiceRegister.Interfaces", "test\Medit.AspNetCore.ServiceRegister.Interfaces\Medit.AspNetCore.ServiceRegister.Interfaces.csproj", "{CE50D413-0A2F-4AAF-A16E-FCEF219C8EB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medit.AspNetCore.ServiceRegister.Implementations", "test\Medit.AspNetCore.ServiceRegister.Implementations\Medit.AspNetCore.ServiceRegister.Implementations.csproj", "{B0E314B9-F7C6-429C-BBF8-7DC603ADDF14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medit.AspNetCore.ServiceRegister.Test", "test\Medit.AspNetCore.ServiceRegister.Test\Medit.AspNetCore.ServiceRegister.Test.csproj", "{15049D4C-A0D9-4BF9-BFD2-935AB3AC06FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +23,36 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B459A8B1-41B8-4BB5-9D93-BAC888EE2D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B459A8B1-41B8-4BB5-9D93-BAC888EE2D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B459A8B1-41B8-4BB5-9D93-BAC888EE2D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B459A8B1-41B8-4BB5-9D93-BAC888EE2D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01E2816D-00EB-4A25-9F7C-85883EDAB330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01E2816D-00EB-4A25-9F7C-85883EDAB330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01E2816D-00EB-4A25-9F7C-85883EDAB330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01E2816D-00EB-4A25-9F7C-85883EDAB330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29C80BDE-E704-4192-AD72-1FD173F36593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29C80BDE-E704-4192-AD72-1FD173F36593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29C80BDE-E704-4192-AD72-1FD173F36593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29C80BDE-E704-4192-AD72-1FD173F36593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE50D413-0A2F-4AAF-A16E-FCEF219C8EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE50D413-0A2F-4AAF-A16E-FCEF219C8EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE50D413-0A2F-4AAF-A16E-FCEF219C8EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE50D413-0A2F-4AAF-A16E-FCEF219C8EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0E314B9-F7C6-429C-BBF8-7DC603ADDF14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E314B9-F7C6-429C-BBF8-7DC603ADDF14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E314B9-F7C6-429C-BBF8-7DC603ADDF14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E314B9-F7C6-429C-BBF8-7DC603ADDF14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15049D4C-A0D9-4BF9-BFD2-935AB3AC06FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15049D4C-A0D9-4BF9-BFD2-935AB3AC06FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15049D4C-A0D9-4BF9-BFD2-935AB3AC06FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15049D4C-A0D9-4BF9-BFD2-935AB3AC06FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{01E2816D-00EB-4A25-9F7C-85883EDAB330} = {BEFD72E9-3009-4DE7-84D4-8A3EA79EB318}
+		{29C80BDE-E704-4192-AD72-1FD173F36593} = {2BA34DDD-E660-4397-AC20-2E6CD525CF26}
+		{CE50D413-0A2F-4AAF-A16E-FCEF219C8EB5} = {2BA34DDD-E660-4397-AC20-2E6CD525CF26}
+		{B0E314B9-F7C6-429C-BBF8-7DC603ADDF14} = {2BA34DDD-E660-4397-AC20-2E6CD525CF26}
+		{15049D4C-A0D9-4BF9-BFD2-935AB3AC06FE} = {2BA34DDD-E660-4397-AC20-2E6CD525CF26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9462B8F8-B6B9-4F8F-84BC-970AA45A6F1B}

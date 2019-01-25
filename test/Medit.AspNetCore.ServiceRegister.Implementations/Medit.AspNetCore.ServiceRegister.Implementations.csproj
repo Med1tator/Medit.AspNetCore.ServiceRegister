@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Medit.AspNetCore.ServiceRegister.Interfaces\Medit.AspNetCore.ServiceRegister.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

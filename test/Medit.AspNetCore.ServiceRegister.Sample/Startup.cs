@@ -30,9 +30,11 @@ namespace Medit.AspNetCore.ServiceRegister.Sample
             services.AddScoped<IMusicPlayer, NetEaseCloudMusic>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            var registrations = new ServiceRegistrations();
-            Configuration.Bind("ServiceRegistrations", registrations);
-            services.AddServiceRegister(registrations);
+            //var registrations = new ServiceRegistrations();
+            //Configuration.Bind("ServiceRegistrations", registrations);
+            //services.AddServiceRegister(Configuration.Get<ServiceRegistrations>());
+
+            services.AddServiceRegister(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

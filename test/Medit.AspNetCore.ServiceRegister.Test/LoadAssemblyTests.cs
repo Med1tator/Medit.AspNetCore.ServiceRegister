@@ -5,7 +5,7 @@ using Xunit;
 
 namespace Medit.AspNetCore.ServiceRegister.Test
 {
-    public class AssemblyLoadTests
+    public class LoadAssemblyTests
     {
         [Fact]
         public void LoadFromRefPathTest()
@@ -20,7 +20,7 @@ namespace Medit.AspNetCore.ServiceRegister.Test
         [Fact]
         public void LoadFromAbsPathTest()
         {
-            var absPath = @"C:\Users\admin\Documents\WeChat Files\JAY576264928\Files\Medit.ServiceRegister\Medit.ServiceRegister\Medit.ServiceRegister.Tests\bin\Debug\netcoreapp2.2\ext\Medit.AspNetCore.ServiceRegister.Implementations.dll";
+            var absPath = @"D:\source\repos\Medit.AspNetCore.ServiceRegister\test\Medit.AspNetCore.ServiceRegister.Test\bin\Debug\netcoreapp2.2\ext\Medit.AspNetCore.ServiceRegister.Implementations.dll";
 
             Assert.True(Path.IsPathRooted(absPath));
             var ass = Assembly.LoadFrom(absPath);

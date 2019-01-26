@@ -7,7 +7,7 @@ namespace Medit.AspNetCore.ServiceRegister.Implementations
     {
         public void PlayJayChou()
         {
-            Console.WriteLine("Play Jay Chou in NetEase Cloud Music.");
+            Console.WriteLine("Play Jay Chou by NetEase Cloud Music.");
         }
     }
 }

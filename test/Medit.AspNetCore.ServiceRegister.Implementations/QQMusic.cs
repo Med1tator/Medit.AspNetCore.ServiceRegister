@@ -9,7 +9,7 @@ namespace Medit.AspNetCore.ServiceRegister.Implementations
     {
         public void PlayJayChou()
         {
-            Console.WriteLine("Play Jay Chou in QQ Music.");
+            Console.WriteLine("Play Jay Chou by QQ Music.");
         }
     }
 }

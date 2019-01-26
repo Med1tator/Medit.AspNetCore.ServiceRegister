@@ -13,6 +13,8 @@ namespace Medit.AspNetCore.ServiceRegister
             if (registrations == null)
                 throw new ArgumentNullException(nameof(registrations));
 
+            ServiceRegistrationsFilter(registrations);
+
             registrations.ForEach(serviceRegistration =>
             {
                 services.Add(serviceRegistration.GetServiceDescriptor());
@@ -25,11 +27,16 @@ namespace Medit.AspNetCore.ServiceRegister
         {
             var registrations = configuration.GetServiceRegistrations<ServiceRegistrations>();
 
-            registrations.RemoveAll(o => string.IsNullOrWhiteSpace(o.ServiceType) || string.IsNullOrWhiteSpace(o.ImplementationType) || string.IsNullOrWhiteSpace(o.ImplementationPath));
+            ServiceRegistrationsFilter(registrations);
 
             services.AddServiceRegister(registrations);
 
             return services;
+        }
+
+        private static void ServiceRegistrationsFilter(ServiceRegistrations registrations)
+        {
+            registrations.RemoveAll(o => string.IsNullOrWhiteSpace(o.ServiceType) || string.IsNullOrWhiteSpace(o.ImplementationType) || string.IsNullOrWhiteSpace(o.ImplementationPath));
         }
     }
 }
